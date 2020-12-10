@@ -1,0 +1,100 @@
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: initial;
+  box-sizing: inherit;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url(airplane_in_the_evening_light-wallpaper-1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+  background-size: contain;
+  -webkit-background-size:contain;
+
+  background-size: cover;
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+.wrapper{
+  width: 400px;
+  margin: 100px 120px 0;
+  padding: 65px 40px 16px;
+  background-color: #fffaac;
+  filter:alpha(opacity=100) ;
+  opacity: 0.8;
+  border-radius: 3;
+}
+.cities{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.cities ::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 5px;
+  top: 25px;
+  left: 50%;
+  background-color: #d3e6fa;
+  transform: translate(-50%);
+}
+.city-name-short{
+  font-size: 50px;
+  font-family: 'Prompt',sans-serif;
+  color: #3b8acf;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 36px;
+  margin-bottom: 9px;
+}
+.city-name-full{
+  text-transform: uppercase;
+  color: #aaa;
+}
+.city-from{
+  float: left;
+}
+.city-to{
+  float: right;
+  text-align: right;
+}
+.ticket-details{
+  overflow: hidden;
+  
+}
+.ticket-info{
+  width: 35%;
+  float:left;
+  margin-bottom: 22px;
+}
+.ticket-info-small{
+  width: 30%;
+}
+.ticket-info-label{
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.ticket-info-value{
+  font-size: 16px;
+}
+.ticket-qr{
+  float: right;
+  width: 150px;
+}
+.ticket-qr img{
+  max-width: 100%;
+  max-height: auto;
+}
